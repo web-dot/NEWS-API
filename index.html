@@ -54,14 +54,14 @@
     let showNews = function(){
     
   let data = request.response;
-  let articles = data.articles;
+  let article = data.articles;
   console.log(data);
   
-  console.log(articles);
-  let t1 = articles[1].title;
+  console.log(article);
+  let t1 = article[1].title;
   let randTitle = Math.floor(Math.random()*10)    
-articles.forEach(element => {
-  let newsPop = articles[randTitle]['title']
+article.forEach(element => {
+  let newsPop = article[randTitle]['title']
   console.log(newsPop)
   newsLine.textContent = newsPop
 });
